@@ -1,5 +1,9 @@
 # algorithms_team
-[TOC]
+[스터디 내용](#study)  
+[21.12.07 - 단체사진 찍기 (DFS, Back Tracking, Permutation)](#211207)  
+[21.12.14 - 리틀 프렌즈 사천성](#211214)  
+
+
 
 ## 문제목록
 
@@ -7,6 +11,7 @@
 | ---- | -------- | ------------------------------------------------------- |
 | 1    | 21.12.07 | https://programmers.co.kr/learn/courses/30/lessons/1835 |
 | 2    | 21.12.14 | https://programmers.co.kr/learn/courses/30/lessons/1836 |
+
 
 ## 진행 규칙
 
@@ -32,8 +37,11 @@
 5. webex 방 만들기
 
 
+<a name="study"/>
 
 ## 스터디 내용
+
+<a name="211207"/>
 
 ### 21.12.07 - 단체사진 찍기 (DFS, Back Tracking, Permutation)
 
@@ -82,6 +90,7 @@ https://soom-soom.tistory.com/m/101
 - unordered_map<T,V> -> O(n)으로 찾기 좋음
 
 
+<a name="211214"/>
 
 ### 21.12.14 - 리틀 프렌즈 사천성
 
