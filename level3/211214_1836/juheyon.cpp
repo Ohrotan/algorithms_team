@@ -6,6 +6,9 @@
 #include <algorithm>
 using namespace std;
 
+/*
+	통과 (246.06ms, 4.32MB)
+*/
 int r, c;
 char M[120][120];
 int dx[4] = {1, 0, -1, 0};
