@@ -81,7 +81,7 @@ void CheckArrangementState() {
         case '=': if (distance != ((int)dataTemp[i][4] - 48)) return; break;
         case '<': if (distance >= ((int)dataTemp[i][4] - 48)) return; break;
         case '>': if (distance <= ((int)dataTemp[i][4] - 48)) return; break;
-        default:                                                    break;
+        default:                                                      break;
         }
     }
     answerTemp++; //이까지 왔다면 모든 조건을 만족한 것이니 정답++
