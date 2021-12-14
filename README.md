@@ -103,6 +103,50 @@ https://soom-soom.tistory.com/m/101
 | 문제   | https://programmers.co.kr/learn/courses/30/lessons/1836 |
 |   | level3/211214_1836|
 
+<다은>
+사용개념 : DFS(알파벳 조합), BFS(알파벳 매칭)
+시간 : 2158ms
+메모리 : 4.26MB
+
+<현주>
+사용개념 : 그리디, hash table, 지각
+시간 : 11ms
+메모리 : 4.32MB
+
+<주현>
+사용개념 : BFS
+시간 : 245ms
+메모리 : 4.32MB
+
+<성환>
+사용개념 : 조건에 맞는 것만 날구현
+시간 : 1.66ms
+메모리 : 4.21MB
+
+<외 1명>
+사용개념 : 조건에 맞는 것만 날구현
+시간 : 1.44ms
+메모리 : 4.32MB
+
+수행 시간: 230 ~ 7500ms (프로그래머스 제출 기준)
+
+메모리 사용: 4.1~ 4.3Mb
+
+
+
+참고 링크:
+
+https://blog.naver.com/yoochansong/222089528785(unordered_map, ordered_map)
+
+
+
+#### Tips!
+
+- 조건이 까다롭지 않아서 조건을 만족하는 경우만 따져봐도 될듯
+- unordered_map 애용하기(현주 나이스)
+- emplace_back
+- string compare : 맞으면 0(false), 틀리면 -1
+  "asd" == "asd" : 맞으면 1(true), 틀리면 0(false)
 
 
 
