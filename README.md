@@ -11,6 +11,7 @@
 | ---- | -------- | ------------------------------------------------------- |
 | 1    | 21.12.07 | https://programmers.co.kr/learn/courses/30/lessons/1835 |
 | 2    | 21.12.14 | https://programmers.co.kr/learn/courses/30/lessons/1836 |
+| 3    | 21.12.21 | https://programmers.co.kr/learn/courses/30/lessons/42627|
 
 
 ## 진행 규칙
