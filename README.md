@@ -2,6 +2,8 @@
 [스터디 내용](#study)  
 [21.12.07 - 단체사진 찍기 (DFS, Back Tracking, Permutation)](#211207)  
 [21.12.14 - 리틀 프렌즈 사천성](#211214)  
+[21.12.21 - 디스크 컨트롤러](#211221)
+[21.12.28 - 멀리 뛰기](#211228)
 
 
 
@@ -12,6 +14,7 @@
 | 1    | 21.12.07 | https://programmers.co.kr/learn/courses/30/lessons/1835 |
 | 2    | 21.12.14 | https://programmers.co.kr/learn/courses/30/lessons/1836 |
 | 3    | 21.12.21 | https://programmers.co.kr/learn/courses/30/lessons/42627|
+| 4    | 21.12.28 | https://programmers.co.kr/learn/courses/30/lessons/12914|
 
 
 ## 진행 규칙
@@ -20,7 +23,7 @@
 - 화요일 21시에 webex 모임
 - 업로드 경로 level?/날짜_문제번호/이름.cpp
 - git push 는 master로
-- 리더 순번: 조란-변성환-이다은-이현주-박주현
+- 리더 순번: 조란-변성환-이다은-이현주-박주현-
 
 ## 진행 순서
 
