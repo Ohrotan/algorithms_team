@@ -104,7 +104,7 @@ https://soom-soom.tistory.com/m/101
 | 날짜   | 21.12.14 21:00                                          |
 | 참석자 | 박주현, 변성환, 이다은, 이현주, 조란                    |
 | 리더   | 변성환                                                  |
-| 문제   | https://programmers.co.kr/learn/courses/30/lessons/1836 |
+| 문제   | hhttps://programmers.co.kr/learn/courses/30/lessons/42627 |
 |   | level3/211214_1836|
 
 <다은>
@@ -151,6 +151,74 @@ https://blog.naver.com/yoochansong/222089528785(unordered_map, ordered_map)
 - emplace_back
 - string compare : 맞으면 0(false), 틀리면 -1
   "asd" == "asd" : 맞으면 1(true), 틀리면 0(false)
+  
+  
+<a name="211221"/>
+
+### 21.12.21 - 디스크 컨트롤러
+
+| 구분   | 내용                                                    |
+| ------ | ------------------------------------------------------- |
+| 날짜   | 21.12.21 21:00                                          |
+| 참석자 | 박주현, 변성환, 이다은, 이현주, 조란                    |
+| 리더   | 이다은                                                  |
+| 문제   | https://programmers.co.kr/learn/courses/30/lessons/1836 |
+|   | level3/211221_1836|
+
+priority_queue : 우선순위 큐, 내부적으로는 힙과 비슷하게 동작
+
+SJF(Shortest job first)
+
+현재시각 기준 이전 에 도착한 job 중 제일 짧은 것 먼저 삽입 -> 최소힙에서 root pop
+
+없으면 그 다음 Job
+
+
+
+<다은> 사용개념 : job 정렬, priority_queue(최소힙), !빈 Pq 조건 while문 안에 반복
+
+<현주> 사용개념 : job 정렬, priority_queue(최소힙), !빈 Pq 조건 while문 안에 반복, 들어온 시간의 합 - 끝난시간의 합
+
+<란> 사용개념 : job 정렬, priority_queue(최소힙), job_idx 대신 jobs vector를 지움
+
+<주현, 우빈> 사용개념 : job 정렬, priority_queue(최소힙)
+
+<성환> 사용개념 : job 정렬, priority_queue(최소힙)
+
+수행 시간: 0.01ms ~ 0.46ms
+
+메모리: 3.67MB ~ 4.33MB
+
+#### Tips!
+
+JOB 구조체/2차원 벡터의 특정 속성을 가지고 힙을 구성할 때
+
+```c++
+struct JOB{
+    int t_start; // 작업 요청 시점
+    int t_exe; // 작업 소요 시간
+};
+
+// 작업 소요 시간 기준의 최소 힙
+struct cmp{
+    bool operator()(JOB a, JOB b){
+        return a.t_exe > b.t_exe;
+    }
+};
+/*
+연산자를 오버로딩 - 우빈's
+bool operator<(Request a, Request b) {
+        return a.time > b.time;
+}
+*/
+
+std::priority_queue<JOB, vector<JOB>, cmp> // 자료형 JOB, 컨테이너 vector, 사용자 정의 비교연산자 cmp
+//std::priority_queue<vector<int>, vector<vector<int>>, cmp> diskQueue;
+```
+
+- 최대힙: priority_queue<T> max_heap;
+- 최소힙: priority_queue<T, vector<T>, greater<T> > min_heap;
+- Sort()의 디폴트는 오름차순 (배열이라면 각 인자 자리마다도 오름차순 정렬해줌)
 
 
 
