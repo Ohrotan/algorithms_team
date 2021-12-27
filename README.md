@@ -104,7 +104,7 @@ https://soom-soom.tistory.com/m/101
 | 날짜   | 21.12.14 21:00                                          |
 | 참석자 | 박주현, 변성환, 이다은, 이현주, 조란                    |
 | 리더   | 변성환                                                  |
-| 문제   | hhttps://programmers.co.kr/learn/courses/30/lessons/42627 |
+| 문제   | https://programmers.co.kr/learn/courses/30/lessons/42627 |
 |   | level3/211214_1836|
 
 <다은>
