@@ -4,7 +4,7 @@
 [21.12.14 - 리틀 프렌즈 사천성](#211214)  
 [21.12.21 - 디스크 컨트롤러](#211221)  
 [21.12.28 - 멀리 뛰기](#211228)
-
+[22.01.04 - 거스름돈, 점프와 순간이동) (#220104)
 
 
 ## 문제목록
@@ -15,7 +15,8 @@
 | 2    | 21.12.14 | https://programmers.co.kr/learn/courses/30/lessons/1836 |
 | 3    | 21.12.21 | https://programmers.co.kr/learn/courses/30/lessons/42627|
 | 4    | 21.12.28 | https://programmers.co.kr/learn/courses/30/lessons/12914|
-
+| 5    | 22.01.04 | https://programmers.co.kr/learn/courses/30/lessons/12907|
+| 6    | 22.01.04 | https://programmers.co.kr/learn/courses/30/lessons/12980|
 
 ## 진행 규칙
 
