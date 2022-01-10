@@ -19,6 +19,8 @@
 | 5    | 22.01.04 | https://programmers.co.kr/learn/courses/30/lessons/12907|
 | 6    | 22.01.04 | https://programmers.co.kr/learn/courses/30/lessons/12980|
 | 7    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/12979|
+| 8    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/87391|
+
 
 ## 진행 규칙
 
