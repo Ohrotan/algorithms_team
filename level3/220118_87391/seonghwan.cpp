@@ -43,7 +43,7 @@ long long solution(int n, int m, int y, int x, vector<vector<int>> queries) {
         distance = queries.at(i).at(1);
 
         switch (direction) {
-        case backToRight://왼쪽으로 추적해야하면
+        case backToRight://오른쪽으로 추적해야하면
             if (xRight != m - 1)//만약 벽에서 시작했다고 하면 그 사이를 전부다 공으로 메워줘야 하기 때문에 xRight 바운더리를 그대로 둔다.
                 xRight = xRight - distance;
 
