@@ -4,12 +4,12 @@
 
 using namespace std;
 
-long long solution(int n, int m, int x, int y, vector<vector<int>> queries) {
+long long solution(int n, int m, int y, int x, vector<vector<int>> queries) {
     long long answer = 0;
-    int sx = x;
-    int ex = x;
-    int sy = y;
-    int ey = y;
+    long long sx = x;
+    long long ex = x;
+    long long sy = y;
+    long long ey = y;
     int dir, dx;
     // printf("%d %d %d %d \n", sx, ex, sy, ey);
     // 목적위치에서 반대로 가용 범위를 찾아감
@@ -58,9 +58,11 @@ long long solution(int n, int m, int x, int y, vector<vector<int>> queries) {
                     if(ey < 0)
                         ey = 0;
                 break;
+            default:
+                break;
         }
         if(sx > m-1 || ex < 0 || sy > n-1 || ey < 0)
             return 0;
     }
-    return ((ex - sx + 1) * (ey - sy + 1));
+    return (ex - sx + 1) * (ey - sy + 1);
 }
