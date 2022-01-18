@@ -35,8 +35,6 @@ long long solution(int n, int m, int y, int x, vector<vector<int>> queries) {
                     sx = 0;
                 if(ex != m-1)
                     ex -= dx;
-                    if(ex < 0)
-                        ex = 0;
                 break;
             // 행 다시 증가
             case 2:
@@ -55,8 +53,6 @@ long long solution(int n, int m, int y, int x, vector<vector<int>> queries) {
                     sy = 0;
                 if(ey != n-1)
                     ey -= dx;
-                    if(ey < 0)
-                        ey = 0;
                 break;
             default:
                 break;
