@@ -1,3 +1,8 @@
+/*
+    실행시간 : 0.01ms~0.23ms, 메모리 : 3.63MB~4.35MB
+    1. bfs로 풀었음.
+    2. 위치+방향에서의 최소값만 큐에 push
+*/
 #include <vector>
 #include <queue>
 
