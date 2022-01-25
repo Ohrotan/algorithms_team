@@ -41,6 +41,7 @@ int solution(vector<vector<int> > board)
         }
         for (int i = 0; i < 4; i++)
         {
+            int tcost = cost;
             int tx = x + dx[i];
             int ty = y + dy[i];
             if (tx > N - 1 || ty > N - 1 || tx < 0 || ty < 0)
@@ -49,12 +50,12 @@ int solution(vector<vector<int> > board)
                 continue;
 
             //방향 , -1이면 처음, dir ==i면 직선 도로
-            if (dir == -1 || dir == i) cost +=100;
-            else cost+=600;
+            if (dir == -1 || dir == i) tcost +=100;
+            else tcost+=600;
 
-            if(Cost[tx][ty] >= cost){
-                Cost[tx][ty] = cost;
-                q.push({tx,ty,i,cost});
+            if(Cost[tx][ty] >= tcost){
+                Cost[tx][ty] = tcost;
+                q.push({tx,ty,i,tcost});
             }
 
         }
