@@ -6,6 +6,7 @@
 [21.12.28 - 멀리 뛰기](#211228)  
 [22.01.04 - 거스름돈, 점프와 순간이동](#220104)  
 [22.01.11 - 기지국 설치](#220111)
+[22.01.18 - 파괴되지 않은 건물](#220118)
 
 
 ## 문제목록
@@ -21,6 +22,8 @@
 | 7    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/12979 |
 | 8    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/87391 |
 | 9    | 22.01.18 | https://programmers.co.kr/learn/courses/30/lessons/43162<br />https://programmers.co.kr/learn/courses/30/lessons/67259 |
+| 8    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/92344 |
+
 
 
 ## 진행 규칙
