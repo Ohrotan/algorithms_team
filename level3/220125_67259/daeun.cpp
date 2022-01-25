@@ -13,8 +13,8 @@ int cost = 2147000000; // int 형 최대값
 int N;
 
 struct CAR{
-    int x;
     int y;
+    int x;
     int dir;
 };
 
