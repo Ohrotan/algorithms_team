@@ -22,7 +22,7 @@
 | 7    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/12979 |
 | 8    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/87391 |
 | 9    | 22.01.18 | https://programmers.co.kr/learn/courses/30/lessons/43162<br />https://programmers.co.kr/learn/courses/30/lessons/67259 |
-| 8    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/92344 |
+| 10   | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/92344 |
 
 
 
