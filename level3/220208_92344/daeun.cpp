@@ -1,4 +1,3 @@
-// 해설 추가필요
 #include <string>
 #include <vector>
 #include <stdio.h>
@@ -29,14 +28,14 @@ int solution(vector<vector<int>> board, vector<vector<int>> skill) {
     }
     
     // 누적 더하기
-    for (int y = 0; y < board.size()+1; y++){
-        for (int x = 0; x < board[0].size(); x++){
+    for (int y = 0; y < board.size(); y++){
+        for (int x = 0; x < board[0].size()-1; x++){
             mask[y][x+1] = mask[y][x] + mask[y][x+1];
         }
     }
 
-    for (int x = 0; x < board[0].size()+1; x++){
-        for (int y = 0; y < board.size(); y++){
+    for (int x = 0; x < board[0].size(); x++){
+        for (int y = 0; y < board.size()-1; y++){
             mask[y+1][x] = mask[y][x] + mask[y+1][x];
         }
     }
