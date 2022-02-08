@@ -40,17 +40,10 @@ int solution(vector<vector<int>> board, vector<vector<int>> skill) {
         }
     }
     
-    // mask와 board 더하기
-    for (int y = 0; y < board.size(); y++){
-        for (int x = 0; x < board[0].size(); x++){
-            mask[y][x] += board[y][x];
-        }
-    }
-    
     // 파괴되지 않은 건물 count
     for (int y = 0; y < board.size(); y++){
         for (int x = 0; x < board[0].size(); x++){
-            if (mask[y][x] > 0)
+            if (mask[y][x] + board[y][x] > 0)
                 answer++;
         }
     }
