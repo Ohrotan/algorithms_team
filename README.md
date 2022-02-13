@@ -24,7 +24,7 @@
 | 8    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/87391 |
 | 9    | 22.01.18 | https://programmers.co.kr/learn/courses/30/lessons/43162<br />https://programmers.co.kr/learn/courses/30/lessons/67259 |
 | 10   | 22.01.25 | https://programmers.co.kr/learn/courses/30/lessons/92344 |
-| 11   | 22.01.25 | https://programmers.co.kr/learn/courses/30/lessons/92343 |
+| 11   | 22.02.01 | https://programmers.co.kr/learn/courses/30/lessons/92343 |
 
 
 
