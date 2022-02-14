@@ -37,7 +37,7 @@ void dfs(vector<int> info, int lambs, int wolves) {
 int solution(vector<int> info, vector<vector<int>> edges) {
     memset(visit, false, sizeof(visit));
     
-    // 계산하기 쉽게 nodes 배열에 추가 인접리스트를 담은 배열이라고 생각하면 됨
+    // 계산하기 쉽게 nodes 배열에 추가, 인접리스트를 담은 배열이라고 생각하면 됨
     for(auto&& e : edges) {
         nodes[e.at(0)].push_back(e.at(1));
         nodes[e.at(1)].push_back(e.at(0));
