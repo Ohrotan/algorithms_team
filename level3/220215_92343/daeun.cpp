@@ -26,7 +26,6 @@ void dfs(int sheepcnt, int wolfcnt, int curNode, vector<int> nextNodes, vector<i
     }
     
     nextNodes.erase(nextNodes.begin() + curNode);
-    // printf("%d \n", graphs[curNode][1]);
     for (int i = 0; i < graphs[curNode].size(); i++){
         tmp.push_back(graphs[curNode][i]);
     }
