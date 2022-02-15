@@ -8,7 +8,8 @@
 [22.01.11 - 기지국 설치](#220111)  
 [22.01.18 - 경주로 건설](#220118)
 [22.01.25 - 파괴되지 않은 건물](#220125)
-
+[22.02.08 - 양과 늑대](#220208)
+[22.02.15 - 사라지는 ](#220215)
 
 ## 문제목록
 
@@ -24,8 +25,8 @@
 | 8    | 22.01.11 | https://programmers.co.kr/learn/courses/30/lessons/87391 |
 | 9    | 22.01.18 | https://programmers.co.kr/learn/courses/30/lessons/43162<br />https://programmers.co.kr/learn/courses/30/lessons/67259 |
 | 10   | 22.01.25 | https://programmers.co.kr/learn/courses/30/lessons/92344 |
-| 11   | 22.02.01 | https://programmers.co.kr/learn/courses/30/lessons/92343 |
-
+| 11   | 22.02.08 | https://programmers.co.kr/learn/courses/30/lessons/92343 |
+| 11   | 22.02.15 | https://programmers.co.kr/learn/courses/30/lessons/92345 |
 
 
 
@@ -435,27 +436,15 @@ board 2차원 배열과 각 자리 더하기
   https://kimjingo.tistory.com/155
    ​
   
-### 22.02.08 - 파괴되지않은 건물
+### 22.02.15 - 양과 늑대
 
 | 구분   | 내용                                                     |
 | ------ | -------------------------------------------------------- |
-| 날짜   | 22.02.08 21:00                                           |
-| 참석자 | 박주현, 변성환, 이다은, 진우빈, 조란                     |
-| 리더   | 이다은                                                   |
-| 문제   | https://programmers.co.kr/learn/courses/30/lessons/92344 |
+| 날짜   | 22.02.15 21:00                                           |
+| 참석자 | 변성환, 이다은, 조란                     |
+| 리더   | 이현주                                                   |
+| 문제   | https://programmers.co.kr/learn/courses/30/lessons/92343 |
 |        | level3/220215_92343                                      |
-
-누적합 배열 생성
-
-특정 구간의 누적합 배열에 k 값 추가
-
-ㄴex) 0~2 구간에 k 만큼의 영향을 준다면, 시작점 0에 k 더함, 끝점 2 + 1 위치에 -k 더함
-
-i번째 배열과 i+1번 째 배열 행, 열 각각 누적합 연산
-
-board 2차원 배열과 각 자리 더하기
-
-
 
 <주현> - 실행시간: 0.01 ~ 29.08ms
 
@@ -467,11 +456,7 @@ board 2차원 배열과 각 자리 더하기
 
 <다은> - 실행시간: 2.04 ~ 29.68ms
 
-#### Tips!
 
-- 누적합 개념과 문제풀이 설명 블로그
-
-  https://kimjingo.tistory.com/155
   
   
   
