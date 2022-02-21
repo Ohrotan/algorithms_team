@@ -9,7 +9,7 @@
 [22.01.18 - 경주로 건설](#220118)  
 [22.01.25 - 파괴되지 않은 건물](#220125)  
 [22.02.08 - 양과 늑대](#220208)   
-[22.02.15 - 사라지는 발판](#220215) 
+[22.02.15 - 양궁대회](#220215) 
 
 ## 문제목록
 
@@ -26,7 +26,7 @@
 | 9    | 22.01.18 | https://programmers.co.kr/learn/courses/30/lessons/43162<br />https://programmers.co.kr/learn/courses/30/lessons/67259 |
 | 10   | 22.01.25 | https://programmers.co.kr/learn/courses/30/lessons/92344 |
 | 11   | 22.02.08 | https://programmers.co.kr/learn/courses/30/lessons/92343 |
-| 11   | 22.02.15 | https://programmers.co.kr/learn/courses/30/lessons/92345 |
+| 11   | 22.02.15 | https://programmers.co.kr/learn/courses/30/lessons/92342 |
 
 
 
