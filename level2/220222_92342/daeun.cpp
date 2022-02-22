@@ -1,7 +1,6 @@
 //반타작 시간초과..~  수졍듕..
 #include <string>
 #include <vector>
-#include <deque>
 #include <stdio.h>
 
 using namespace std;
@@ -10,7 +9,7 @@ int num;
 vector<int> tmp(11, 0);
 vector<int> res(11, 0);
 vector<int> apeach(11, 0);
-int max_gap = 0;
+int max_gap = -1;
 
 
 void dfs(int L){
@@ -55,19 +54,7 @@ vector<int> solution(int n, vector<int> info) {
     }
     dfs(0);
     
-    int flag = 0;
-    for(int i = 0; i < 11; i++){
-        if(res[i] != 0){
-            flag = 1;
-        }
-    }
-
-    if(flag == 1){
-        return res;
-    }
-    else{
-        res.clear();
-        res.push_back(-1);
-        return res;
-    }
+    if(max_gap == -1) return {-1};
+    
+    return res;
 }
