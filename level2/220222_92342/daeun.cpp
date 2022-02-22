@@ -38,7 +38,8 @@ void dfs(int L){
         for(int i = 0; i < 11; i++){
             if(tmp[i] > apeach[i])
                 continue;
-            
+            if(apeach[i] > num - L)
+                continue;
             tmp[i]++;
             dfs(L+1);
             tmp[i]--;
