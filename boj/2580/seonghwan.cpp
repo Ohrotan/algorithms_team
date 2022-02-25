@@ -8,9 +8,7 @@
 
 using namespace std;
 
-int map[9][9] = {
-    0,
-};
+int map[9][9] = {0, };
 vector<pair<int, int>> emptyPoint;
 
 void Input();
