@@ -1,4 +1,5 @@
 # 150124KB 	2776ms
+#c++도 할예정~
 
 def getCols(board_, r, c):
     return set(board_[r])
