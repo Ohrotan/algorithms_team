@@ -1,67 +1,63 @@
-// 시간초과~~ 수정예정~~
 #include <iostream>
-#include <set>
 #include <vector>
 
 using namespace std;
 int board[9][9];
+int done = 0;
 
 struct Blank{
     int r;
     int c;
-    set<int> candi = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 };
 
 vector<Blank> blanks;
 int blank_cnt = 0;
 
+// 숫자 n이 빈칸에 적절한지 true/false로 반환
+bool isCandi(int r, int c, int n){
+    for(int i = 0; i < 9; i++){
+        // 가로
+        if (board[r][i] == n)
+            return false;
+        // 세로
+        if (board[i][c] == n)
+            return false;
+    }
+
+    // 사각 범위
+    for(int i = (r/3)*3; i < (r/3)*3 + 3; i++){
+        for(int j = (c/3)*3; j < (c/3)*3 + 3; j++){
+            if (board[i][j] == n)
+                return false;
+        }
+    }
+    return true;
+}
+
 void DFS(int L){
     if(L == blank_cnt){
+        // 답 찾으면 출력해주고, done 전역 flag 변수 1로 수정
         for(int r = 0; r < 9; r++){
             for(int c = 0; c < 9; c++){
                 printf("%d ", board[r][c]);
             }
             printf("\n");
         }
+        done = 1;
         return;
     }
 
     int r, c;
-    set<int> candi;
     r = blanks[L].r;
     c = blanks[L].c;
-    candi = blanks[L].candi;
-    
+
+    // 0~9를 돌면서 (r, c) 위치의 빈칸이 적절한지 체크, done은 스도쿠 완료 여부 전체 전연변수
     for(int i = 0; i < 9; i++){
-        if (candi.find(board[r][i]) == candi.end())
-            continue;
-        // 가로
-        candi.erase(board[r][i]);
-        // 세로
-        if (candi.find(board[i][c]) == candi.end())
-            continue;
-        candi.erase(board[i][c]);
-    }
-
-    // 사각 범위
-    for(int i = (r/3)*3; i < (r/3)*3 + 3; i++){
-        for(int j = (c/3)*3; j < (c/3)*3 + 3; j++){
-            if (candi.find(board[i][j]) == candi.end())
-                continue;
-            candi.erase(board[i][j]);
+        if (isCandi(r, c, (i+1)) && done == 0){
+            board[r][c] = (i+1);
+            DFS(L+1);
+            board[r][c] = 0;
         }
-    }
-
-    vector<int> candi_ {candi.begin(), candi.end()};
-
-    // for(int i = 0; i < candi.size(); i++){
-    //     printf("L: %d, candi: %d \n", L, candi_[i]);
-    // }
-
-    for(int i = 0; i < candi.size(); i++){
-        board[r][c] = candi_[i];
-        DFS(L+1);
-        board[r][c] = 0;
     }
 }
 
