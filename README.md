@@ -11,6 +11,7 @@
 [22.02.08 - 양과 늑대](#220208)   
 [22.02.15 - 양궁대회](#220215) 
 [22.02.22 - 스도쿠](#220222) 
+[22.03.22 - 평범한 배낭](#220322) 
 ## 문제목록
 
 | 번호   | 날짜       | 문제                                       |
@@ -26,8 +27,9 @@
 | 9    | 22.01.18 | https://programmers.co.kr/learn/courses/30/lessons/43162<br />https://programmers.co.kr/learn/courses/30/lessons/67259 |
 | 10   | 22.01.25 | https://programmers.co.kr/learn/courses/30/lessons/92344 |
 | 11   | 22.02.08 | https://programmers.co.kr/learn/courses/30/lessons/92343 |
-| 11   | 22.02.15 | https://programmers.co.kr/learn/courses/30/lessons/92342 |
-| 11   | 22.02.22 | https://www.acmicpc.net/problem/2580|
+| 12   | 22.02.15 | https://programmers.co.kr/learn/courses/30/lessons/92342 |
+| 13   | 22.02.22 | https://www.acmicpc.net/problem/2580 |
+| 17   | 22.03.22 | https://www.acmicpc.net/problem/12865|
 
 
 
@@ -492,3 +494,36 @@ board 2차원 배열과 각 자리 더하기
 - 1~10점에 대해 이길지말지를 결정하기 때문에 2^10 
 - 현주, 주현, 란, 우빈
 - 현주 현재 idx까지의 점수를 계속 전달해줌 / 주현, 함수로 마지막에 구함
+  
+  
+
+  
+  
+  
+  
+### 22.03.22 - 평범한 배낭
+
+| 구분   | 내용                                                     |
+| ------ | -------------------------------------------------------- |
+| 날짜   | 22.02.22 21:30                                           |
+| 참석자 | 진우빈, 이현주, 박주현 이다은, 조란, 변성환                    |
+| 리더   | 변성환                                                 |
+| 문제   | https://www.acmicpc.net/problem/12865                 |
+|        | boj/12865                                          |
+  
+DP(KnapSack - https://namu.wiki/w/%EB%B0%B0%EB%82%AD%20%EB%AC%B8%EC%A0%9C)
+
+- 완전탐색 + 백트래킹으로 문제를 해결하기에 n = 100이므로 시간초과가 날 수 있다. (최악의 경우에 depth = 100인 bianry search tree의 각 노드를 모두 탐색해야함)
+- 그리디 또한 매 순간 최적의 해를 찾을 수 있는 방법이 없기 때문에 실패.
+- DP를 이용해야 한다. 하지만 아래와 같이 1차원 DP를 하다보면 이전 단계에서 까지의 x kg으로 만들 수 있는 최대 가치 데이터가 필요할 수 있다.(아래 표에서 무게 3, 가치 6인 물건을 집은 후 최대 가치를 따질 때, 이전 까지의 물건으로 4kg을 만들었을 때의 최대 가치 데이터가 필요함을 알 수 있다.)
+  ![image](https://user-images.githubusercontent.com/37177508/159923023-d99c9b2d-5a95-45e1-a98c-6ffd86676c16.png)
+- 따라서, 아래와 같이 2차원으로 0 kg ~ K kg의 가치를 매 순간 갱신 해 주는 2차원 DP를 해야 한다.(이것이 바로 냅색)
+  ![image](https://user-images.githubusercontent.com/37177508/159923228-3d53d243-7751-418e-9722-7d672371a0e3.png)
+- 나 빼고 다들 잘 풀었고, 여기에 설명하기엔 매우 복잡하기 때문에 자세한 설명은 생략함..혹시나 이해가 안되면 리더에게 물어보자
+
+  #### Tips!
+- 맨 처음 2차원 배열로 100x100000의 int 타입의 메모리를 선언하게되면 메모리 낭비가 심하므로, vector로 순간순간의 data를 갱신 해 준다.(현주코드 참고)
+
+  ​
+  
+  
