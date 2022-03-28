@@ -29,7 +29,8 @@
 | 11   | 22.02.08 | https://programmers.co.kr/learn/courses/30/lessons/92343 |
 | 12   | 22.02.15 | https://programmers.co.kr/learn/courses/30/lessons/92342 |
 | 13   | 22.02.22 | https://www.acmicpc.net/problem/2580 |
-| 17   | 22.03.22 | https://www.acmicpc.net/problem/12865|
+| 13   | 22.02.22 | https://www.acmicpc.net/problem/12865 |
+| 17   | 22.03.29 | https://programmers.co.kr/learn/courses/30/lessons/67258|
 
 
 
