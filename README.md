@@ -9,7 +9,7 @@
 [22.01.18 - 경주로 건설](#220118)  
 [22.01.25 - 파괴되지 않은 건물](#220125)  
 [22.02.08 - 양과 늑대](#220208)   
-[22.02.15 - 양궁대회](#220215)   
+[22.02.22 - 양궁대회](#220222)   
 [22.03.08 - 스도쿠](#220308)   
 [22.03.22 - 평범한 배낭](#220322)   
 ## 문제목록
@@ -27,7 +27,7 @@
 | 9    | 22.01.18 | https://programmers.co.kr/learn/courses/30/lessons/43162<br />https://programmers.co.kr/learn/courses/30/lessons/67259 |
 | 10   | 22.01.25 | https://programmers.co.kr/learn/courses/30/lessons/92344 |
 | 11   | 22.02.08 | https://programmers.co.kr/learn/courses/30/lessons/92343 |
-| 12   | 22.02.15 | https://programmers.co.kr/learn/courses/30/lessons/92342 |
+| 12   | 22.02.22 | https://programmers.co.kr/learn/courses/30/lessons/92342 |
 | 13   | 22.03.08 | https://www.acmicpc.net/problem/2580 |
 | 14   | 22.03.22 | https://www.acmicpc.net/problem/12865 |
 | 17   | 22.03.29 | https://programmers.co.kr/learn/courses/30/lessons/67258|
@@ -522,8 +522,8 @@ board 2차원 배열과 각 자리 더하기
 #### Tips!
 - 3 * (y / 3), 3 * (x / 3) 으로 Square의 row, col 시작지점을 판별할 수 있다.
 - std::ios::sync_with_stdio(0), std::cin.tie(0) 이 2가지 커맨드로 cin의 속도를 scanf만큼 빠르게 할 수 있다.
-- 단 멀티쓰레드 환경에서는 불가능하다.
-- 모든 경우의 수를 고려해야 할 때는 백트래킹이 , 더 좋은방법이 있을 때는 후순위로 생각하는 것이 좋다.
+- 단 위 방법은 *멀티쓰레드 환경*에서는 불가능하다.
+- 모든 경우의 수를 고려해야 할 때는 백트래킹이 구현하기 , 더 좋은방법이 있을 때는 후순위로 생각하는 것이 좋다.
   
   ​
 수행 시간: 0.02ms~ 4.24ms
