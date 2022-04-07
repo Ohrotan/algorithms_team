@@ -30,7 +30,9 @@
 | 12   | 22.02.22 | https://programmers.co.kr/learn/courses/30/lessons/92342 |
 | 13   | 22.03.08 | https://www.acmicpc.net/problem/2580 |
 | 14   | 22.03.22 | https://www.acmicpc.net/problem/12865 |
-| 17   | 22.03.29 | https://programmers.co.kr/learn/courses/30/lessons/67258|
+| 17   | 22.03.29 | https://programmers.co.kr/learn/courses/30/lessons/67258 |
+| 18   | 22.04.12 | https://programmers.co.kr/learn/courses/30/lessons/42860 |
+| 19   | 22.04.12 | https://programmers.co.kr/learn/courses/30/lessons/81303 |
 
 
 
