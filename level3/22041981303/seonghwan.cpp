@@ -1,10 +1,19 @@
 /*
     answer += 'O'를 answer = answer + 'O'라고 해서 시간초과 났었음...약 2시간 잡아먹음....다른 하이레벨 언어 쓰는 사람들은 조심해야할듯
+    answer += 'O'을 썼을 땐 되고 answer = answer + 'O'을 썼을 땐 안되는 이유에 대해 인터넷도 찾아보고 직접 생각해봤는데 100%확실한 답은
+    못 찾았고, 아래 가능성이 있다고 봄
+        1. string은 결국 char배열들의 물리적인 공간의 연속의 집합이므로 answer + 'O' 연산 결과를 answer에 덮어 쓴다.
+           이때, answer크기보다 더 큰 저장공간이 필요하기 때문에 realloc가 일어나서 다시 할당 되어야 하기 때문에 이에대한 오버헤드가 큼
+        2. 그리고 string 복사가 일어날 때 첫 번째 문자부터 차례대로 복사가 일어나기 때문에 answer = answer + 'O'는 맨 첫 문자부터 반복적으로
+           복사가 일어나서 이에 대한 반복연산 수행으로 오버헤드 발생
+    위 두 가지 경우가 그나마 가장 유력하다고보는데 혹시라도 정답 알면 제발 알려주셈....
+*/
+
+/*
     upperIndex - i번째 행이랑 위로 연결된 행의 번호를 저장
     underIndex - i번째 행이랑 아래로 연결된 행의 번호를 저장
     위 두 배열로 인해 i번째 행의 위아래 주소번지를 알 수 있다.
 */
-
 #include <string>
 #include <vector>
 #include <stack>
@@ -62,9 +71,11 @@ void Restore(){
 }
 
 string solution(int nTemp, int k, vector<string> cmd) {
-    string answer = "";
+    string answer = 
+    
     n = nTemp;
     nowIndex = k;
+    
     
     for(int i = 0 ; i < n ; i++){
         upperIndex[i] = i - 1;
@@ -89,9 +100,9 @@ string solution(int nTemp, int k, vector<string> cmd) {
     
     for(int i = 0 ; i < n ; i++){
         if(isDeleted[i] == true){
-            answer += 'X';
+            answer[i] = 'X';
         }else{
-            answer += 'O';
+            answer[i] = 'O';
         }
     }
     return answer;
