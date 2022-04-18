@@ -72,7 +72,7 @@ void Restore(){
 }
 
 string solution(int nTemp, int k, vector<string> cmd) {
-    string answer = 
+    string answer = "";
     
     n = nTemp;
     nowIndex = k;
@@ -101,9 +101,9 @@ string solution(int nTemp, int k, vector<string> cmd) {
     
     for(int i = 0 ; i < n ; i++){
         if(isDeleted[i] == true){
-            answer[i] = 'X';
+            answer += 'X';
         }else{
-            answer[i] = 'O';
+            answer += 'O';
         }
     }
     return answer;
