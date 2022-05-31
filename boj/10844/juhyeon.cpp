@@ -5,6 +5,7 @@
 using namespace std;
 int n;
 long long dp[101][10];
+long long mod = 1000000000;
 // dp[자리수][마지막숫자]
 int main()
 {
@@ -21,17 +22,17 @@ int main()
         for (int j = 0; j < 10; j++)
         {
             if (j == 0)
-                dp[i][j] = dp[i - 1][1]%1000000000;
-            else if(j== 9)
-                dp[i][j] = dp[i - 1][8]%1000000000;
+                dp[i][j] = dp[i - 1][1] % mod;
+            else if (j == 9)
+                dp[i][j] = dp[i - 1][8] % mod;
             else
-                dp[i][j] = (dp[i - 1][j-1] +dp[i - 1][j+1])%1000000000;
+                dp[i][j] = (dp[i - 1][j - 1] + dp[i - 1][j + 1]) % mod;
         }
     }
 
     for (int j = 0; j < 10; j++)
     {
-        ans += dp[n][j]%1000000000;
+        ans = (ans + dp[n][j]) % mod;
     }
     cout << ans << endl;
     return 0;
