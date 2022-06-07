@@ -22,7 +22,6 @@ int main()
 	memo[2] = 3;
 
 	for (int i = 4; i <= N; i += 2) {
-		// memo[i] = memo[i] * 3 + memo[i-2] * 2 + memo[i-4] * 2 + ...
 		int next = memo[i-2] * 3;
 		for (int j = i - 4; j >= 0; j -= 2) {
 			next += memo[j] * 2;
