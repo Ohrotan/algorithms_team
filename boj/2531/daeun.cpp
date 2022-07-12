@@ -3,8 +3,8 @@
 
 using namespace std;
 
-#define MAX_D 3000
-#define MAX_N 30000
+#define MAX_D 3001
+#define MAX_N 30001
 
 int N, d, k, c;
 int sushi[MAX_D];
@@ -25,30 +25,26 @@ int main(void) {
 
     int idx1 = 0;
     int idx2 = k-1;
-    int max_cnt;
+    int max_cnt = 0;
     int cnt = 0;
-    int prev_sushi_num;
 
     for (int i = 0; i < k; i++) {
         sushi_num = _data[i];
-        if (!sushi[sushi_num]) cnt++;
+        if (sushi[sushi_num] == 0) cnt++;
         sushi[sushi_num]++;
-        if (i == 0) prev_sushi_num = sushi_num; 
     }
-    max_cnt = cnt;
+    max_cnt = sushi[c] ? cnt : cnt + 1;
 
-    for (int i = 0; i < N-1; i++) {
-        sushi[prev_sushi_num]--;
-        if (!sushi[prev_sushi_num]) cnt--;
-        idx1 = (idx1 + 1) % N;
+    while (idx1 < N) {
+        sushi[_data[idx1]]--;
+        if (sushi[_data[idx1]] == 0) cnt--;
+        idx1++;
 
         idx2 = (idx2 + 1) % N;
         sushi_num = _data[idx2];
-        if (!sushi[sushi_num]) cnt++;
+        if (sushi[sushi_num] == 0) cnt++;
         sushi[sushi_num]++;
         
-        prev_sushi_num = _data[idx1];
-
         int cnt_tmp;
         cnt_tmp = sushi[c] ? cnt : cnt + 1;
         max_cnt = max(cnt_tmp, max_cnt);
