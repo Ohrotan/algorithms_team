@@ -14,6 +14,9 @@ bool CheckPossible(int mid) {
 	int sum = 0;
 
 	for (int i = 0; i < n; i++) {
+
+		if (lectures[i] > mid) return false;
+
 		sum += lectures[i];
 
 		if (sum > mid) {
@@ -33,7 +36,10 @@ bool CheckPossible(int mid) {
 }
 
 void BinarySearch(int min, int max) {
-	int mid = (min + max) / 2;
+	int mid = 0;
+	if (((min + max) | 1) == 1) mid = (min + max) / 2 + 1;
+	else mid = (min + max) / 2;
+
 	bool isPossible = false;
 	if (mid <= min) {
 		ans = max;
