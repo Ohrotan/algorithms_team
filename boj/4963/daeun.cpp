@@ -19,7 +19,7 @@ int v[MAX_H][MAX_W];
 queue<Loc> q;
 int cnt = 0;
 
-void dfs(int y, int x) {
+void bfs(int y, int x) {
     q.push({y, x});
     v[y][x] = cnt;
     while (!q.empty()) {
@@ -49,7 +49,7 @@ int solve() {
         for (int j = 0; j < w; j++) {
             if (v[i][j] != 0 || map[i][j] == 0) continue;
             cnt++;
-            dfs(i, j);
+            bfs(i, j);
         }
     }
     return cnt;
