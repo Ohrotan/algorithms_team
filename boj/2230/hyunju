@@ -1,0 +1,44 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	// 입력 받기
+	int N;
+	int M;
+	cin >> N;
+	cin >> M;
+	vector<int> v(N);
+	for (int i = 0; i < N; ++i) {
+		int num;
+		cin >> num;
+		v[i] = num;
+	}
+	// 정렬 nlogn
+	sort(v.begin(), v.end());
+
+	// 앞부터 좁은 간격을 찾음
+	int ans = 2000000001;
+	int sIdx = 0;
+	int eIdx = 0;
+	while (sIdx < N && eIdx < N) {
+		int interval = v[eIdx] - v[sIdx];
+		if (interval < ans && M <= interval) {
+			ans = interval;
+		}
+		if (M < interval) {
+			++sIdx;
+		} else if (M > interval) {
+			++eIdx;
+		}
+		else {
+			cout << M;
+			return 0;
+		}
+	}
+	cout << ans;
+	return 0;
+}
